@@ -1,6 +1,6 @@
-int startX = 300;
+int startX = 300 + (int)(Math.random() * 200) - 100;
 int startY = 175;
-int endX = 300;
+int endX = 300 + (int)(Math.random() * 200) - 100;
 int endY = 175;
 int x = 75;
 int x2 = 125;
@@ -37,12 +37,15 @@ void draw()
 		startX = endX;
 		startY = endY;
 	}
+	noStroke();
+	fill(0,0,0,10);
+	rect(0,170,600,600);
 }
 void mousePressed()
 {
-	startX = 300;
+	startX = 300+ (int)(Math.random() * 200) - 100;
 	startY = 175;
-	endX = 300;
+	endX = 300 + (int)(Math.random() * 200) - 100;
 	endY = 175;
 }
 
